@@ -1,0 +1,130 @@
+.contact{
+    background-color: $colorRosaFondo;
+    .contactInt{
+        padding-top: 100px;
+        .title{
+            margin-bottom: 20px;
+        }
+        .gradient{
+            background: linear-gradient(90deg,  #FEB0C3, #F2C7DB, #FFC9C9);
+            width: 60%;
+            border-radius: 20px;
+            margin: auto;
+            color: white;
+            text-align: center;
+            padding: 60px 0px 20px 0px;
+            form{
+                .formu{
+                    background-color: rgba(255, 255, 255, 0.377);
+                    width: 60%;
+                    .form-control{
+                        background-color: rgba(255, 255, 255, 0.377);
+                        color: white;                    
+                        &::placeholder {
+                            color:white;
+                          }
+                    }
+                    .buttonEmail{
+                        background-color: #69868A;
+                        color: white;
+
+                    }
+                }
+            }
+        }
+        .contact2{
+            background-color: $colorRosaClaro;
+            border-radius: 10px;
+            p{
+                a{
+                    text-decoration: none;
+                    color: $colorNegro;
+                }
+            }
+        }
+    }
+
+    .contactSecond{
+        .texthree{
+            margin-right: 50px;
+            input{
+                border-radius: 10px;
+            }
+            ::placeholder {
+                text-align: center;
+                font-style: italic;
+                font-size: 1.2rem;
+            }
+            .form-check{
+                font-size: 1.2rem;
+            }
+            select{
+                border-radius: 10px;
+                width: 60%;
+                option{
+                    // text-align: center;
+                    font-style: italic;
+                    font-size: 1.2rem;  
+                }
+            }
+        }
+        .text{
+            input{
+                border-radius: 20px;
+            }
+            ::placeholder {
+                font-style: italic;
+                font-size: 1.2rem;
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contact{
+        .contactInt{
+            .gradient{
+                width: 70%;
+                form{
+                    .formu{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 570px) {
+    .contact{
+        .contactInt{
+            .gradient{
+                width: 70%;
+                form{
+                    .formu{
+                        width: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        background-color: rgba(255, 255, 255, 0);
+                        align-items: center;
+                        .form-control{
+                            width: 100%;
+                            background: rgba(255, 255, 255, 0.377) !important;
+                        }
+                        .btn{
+                            margin-top: 5px;
+
+                        }
+                    }
+                }
+            }
+        }
+        .contactSecond{
+            .texthree{
+                select{
+                    width: 100%;                    
+                }
+            }
+        }
+    }
+}
